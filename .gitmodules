@@ -1,0 +1,3 @@
+[submodule "third-party/jp-engine"]
+	path = third-party/jp-engine
+	url = https://github.com/Penca53/jp-engine.git

@@ -75,10 +75,8 @@ void EnemySpawner::Update() {
     spawn_timer_ = 0;
 
     if (spawned_count_ == spawn_count_) {
-      static int32_t completed_spawners = 0;
-      ++completed_spawners;
-
-      if (completed_spawners == 4) {
+      game_manager_->CompleteSpawner();
+      if (game_manager_->GetCompletedSpawners() == 4) {
         game_manager_->Boss();
       }
     }

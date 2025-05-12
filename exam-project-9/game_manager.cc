@@ -2,6 +2,7 @@
 
 #include <SFML/Audio/Sound.hpp>
 #include <SFML/Window/Keyboard.hpp>
+#include <cstdint>
 
 #include "default_scene.h"
 #include "engine/app.h"
@@ -66,6 +67,14 @@ void GameManager::Lose() {
 
 GameManager::State GameManager::GetState() const {
   return state_;
+}
+
+void GameManager::CompleteSpawner() {
+  ++completed_spawners_;
+}
+
+int32_t GameManager::GetCompletedSpawners() const {
+  return completed_spawners_;
 }
 
 }  // namespace exam_project

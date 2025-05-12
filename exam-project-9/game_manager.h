@@ -27,6 +27,8 @@ class GameManager : public ng::Node {
   void Lose();
 
   State GetState() const;
+  void CompleteSpawner();
+  int32_t GetCompletedSpawners() const;
 
  protected:
   void OnAdd() override;
@@ -34,6 +36,7 @@ class GameManager : public ng::Node {
 
  private:
   State state_{};
+  int32_t completed_spawners_ = 0;
   sf::Sound win_sound_;
   sf::Sound lose_sound_;
 

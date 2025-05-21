@@ -35,7 +35,7 @@ GoblinPistolBullet::GoblinPistolBullet(ng::App* app, sf::Vector2f direction,
   sprite_.setOrigin({4, 4});
   sprite_.setScale({4, 4});
   sprite_.setColor(sf::Color::Green);
-  collider_ = &MakeChild<ng::CircleCollider>(6);
+  collider_ = &MakeChild<ng::CircleCollider>(6.F);
 }
 
 void GoblinPistolBullet::Update() {

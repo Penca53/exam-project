@@ -34,7 +34,7 @@ PistolBullet::PistolBullet(ng::App* app, sf::Vector2f direction,
       sprite_(
           GetApp()->GetResourceManager().LoadTexture("Sprites/bullet_2.png")) {
   sprite_.setOrigin({4, 4});
-  collider_ = &MakeChild<ng::CircleCollider>(2);
+  collider_ = &MakeChild<ng::CircleCollider>(2.F);
 }
 
 void PistolBullet::Update() {

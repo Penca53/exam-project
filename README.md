@@ -16,7 +16,11 @@ The game features a player navigating a tile-based environment, battling differe
 * **Resource Management:** Handles loading of textures, fonts, and sounds for in-game assets.
 * **Pickups:** Players can find health pickups to restore health and large bullet pickups to temporarily enhance their pistol.
 
----
+## Prerequisites
+
+To build and run this project, you will need:
+- **CMake**: A cross-platform open-source build system.
+- **C++ 23 Compatible Compiler**: A compiler that supports the C++23 standard. The project has been developed and tested with **Clang 17**.
 
 ## Summary of Source Files
 
